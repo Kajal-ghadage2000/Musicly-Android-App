@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5f5dc">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="396dp"
+        android:divider="#704214"
+        android:dividerHeight="2dp">
+
+    </ListView>
+
+    <android.support.v7.widget.CardView
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp">
+
+        <AbsoluteLayout
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="0dp"
+            android:layout_height="160dp">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="3dp"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:text="No Song Selected"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#704214"
+                android:textSize="22sp"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="8dp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="38dp"
+                android:text="pagalworld.com"
+                android:textAlignment="center"
+                android:textColor="#704214"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="10dp"
+                tools:layout_editor_absoluteY="50dp" />
+
+            <SeekBar
+                android:id="@+id/seekBar3"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:layout_x="29dp"
+                android:layout_y="60dp"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="68dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="0dp"
+                android:layout_y="65dp"
+                android:text="00:00"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="5dp"
+                tools:layout_editor_absoluteY="65dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_x="328dp"
+                android:layout_y="62dp"
+                android:text="00:00"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="322dp"
+                tools:layout_editor_absoluteY="63dp" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35dp"
+                android:layout_height="37dp"
+                android:layout_centerInParent="true"
+                android:layout_x="162dp"
+                android:layout_y="80dp"
+                android:onClick="playpause"
+                android:src="@drawable/ic_play_circle_outline_black_24dp"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="178dp"
+                tools:layout_editor_absoluteY="74dp" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_x="256dp"
+                android:layout_y="75dp"
+                android:src="@drawable/ic_skip_next_black_24dp"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="249dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_x="78dp"
+                android:layout_y="76dp"
+                android:src="@drawable/ic_skip_previous_black_24dp"
+                android:visibility="invisible"
+                tools:layout_editor_absoluteX="90dp"
+                tools:layout_editor_absoluteY="80dp" />
+
+        </AbsoluteLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
